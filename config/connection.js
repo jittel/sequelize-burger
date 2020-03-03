@@ -12,8 +12,8 @@ if(process.env.JAWSDB_URL){
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "password",
-    database: "burgers_db"
+    password: "123456789",
+    database: "burger_db"
   });
 };
 
@@ -27,7 +27,7 @@ connection.connect(function(err) {
 });
 
 var sequelize = new Sequelize(
-  "burgers_db", 
+  "burger_db", 
   "root", 
   "123456789", 
   {
